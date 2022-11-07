@@ -1,4 +1,5 @@
 const path = require("path");
+const { mergeConfig } = require('vite');
 
 module.exports = {
   stories: ["../stories/**/*.stories.ts"],
@@ -8,9 +9,7 @@ module.exports = {
     builder: "@storybook/builder-vite",
   },
   async viteFinal(config, { configType }) {
-    // customize the Vite config here
-    return {
-      ...config,
+    return mergeConfig(config, {
       resolve: {
         alias: [
           {
@@ -22,6 +21,6 @@ module.exports = {
           },
         ],
       },
-    };
+    });
   },
 };
