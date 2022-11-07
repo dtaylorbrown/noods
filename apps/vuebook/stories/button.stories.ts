@@ -1,13 +1,13 @@
-import { Button } from '@noods/vue';
+import { Button } from "@noods/vue";
 
 export default {
-  title: 'Button',
+  title: "Button",
   component: Button,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
     size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      control: { type: "select" },
+      options: ["small", "medium", "large"],
     },
   },
 };
@@ -24,6 +24,8 @@ const Template = (args) => ({
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: 'Vue',
-  onClick: () => { console.log('Boop') }
+  label: "Vue",
+  onClick: () => {
+    console.log("Boop");
+  },
 };
