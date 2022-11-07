@@ -12,6 +12,6 @@
     "@noods/eslint-config": "*",
     "@noods/tsconfig": "*",
     "typescript": "^4.5.2",
-    "vue": "^2.6.14"
+    "vue": "^3.2.6"
   }
 }
