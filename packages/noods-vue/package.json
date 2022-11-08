@@ -1,17 +1,23 @@
 {
   "name": "@noods/vue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "./index.ts",
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
+    "build": "vite build",
     "lint": "eslint *.ts*"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
     "@noods/eslint-config": "*",
     "@noods/tsconfig": "*",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "eslint": "^7.32.0",
     "typescript": "^4.5.2",
+    "vite": "^3.2.3",
     "vue": "^3.2.6"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
