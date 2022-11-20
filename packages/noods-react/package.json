@@ -1,22 +1,25 @@
 {
   "name": "@noods/react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
+    "build": "tsup ./index.tsx --format esm,cjs --dts --external react",
     "lint": "TIMING=1 eslint \"**/*.ts*\""
   },
   "devDependencies": {
+    "@noods/eslint-config": "*",
+    "@noods/tsconfig": "*",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "@types/node": "^18.11.9",
     "eslint": "^7.32.0",
-    "@noods/eslint-config": "*",
     "react": "^18.2.0",
-    "@noods/tsconfig": "*",
+    "tsup": "^6.4.0",
     "typescript": "^4.5.2"
   },
-  "dependencies": {
-    "@types/node": "^18.11.9"
+  "publishConfig": {
+    "access": "public"
   }
 }
